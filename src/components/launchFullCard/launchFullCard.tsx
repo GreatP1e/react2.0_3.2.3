@@ -29,14 +29,14 @@ export const LaunchFullCard = ({ launch, closeModal }: Props) => (
       </Flex>
       <Space h={20} />
       <Center>
-        <Image src={launch.links.mission_patch} alt="logo" w={200} />
+        <Image src={launch.links?.mission_patch} alt="logo" w={200} />
       </Center>
       <Space h={20} />
       <Title order={4}>Mission name</Title>
       <Text c="dimmed">{launch.mission_name}</Text>
       <Space h={20} />
       <Title order={4}>Rocket name</Title>
-      <Text c="dimmed">{launch.rocket.rocket_name}</Text>
+      <Text c="dimmed">{launch.rocket?.rocket_name}</Text>
       <Space h={20} />
       <Title order={4}>Details</Title>
       <Text c="dimmed">{launch.details}</Text>

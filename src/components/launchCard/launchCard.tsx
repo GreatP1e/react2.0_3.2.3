@@ -9,7 +9,13 @@ export const LaunchCard = ({
   openModal,
 }: Props) => {
   return (
-    <Card shadow="sm" withBorder miw={200} padding="md" radius="md">
+    <Card
+      shadow="sm"
+      withBorder
+      miw={200}
+      padding="md"
+      radius="md"
+      data-testid="launch-card">
       <Flex align="center" direction="column" justify="space-between" h="100%">
         <Flex align="center" direction="column">
           <Image w={150} src={links.mission_patch_small} alt="logo" />

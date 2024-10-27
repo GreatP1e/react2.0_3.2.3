@@ -26,7 +26,6 @@ function App() {
     }
     dispatch({ type: "modal" });
   };
-
   const handlerCloseModal = (event?: MouseEvent<HTMLDivElement>) => {
     if (event && event.target === event.currentTarget)
       dispatch({ type: "modal" });

@@ -12,7 +12,7 @@ export const Modal = ({ show, launch, closeModal }: Props) =>
       onClick={closeModal}>
       {launch && <LaunchFullCard launch={launch} closeModal={closeModal} />}
     </div>,
-    document.getElementById("modal-root")!
+    document.getElementById("modal-root") || document.body
   );
 
 interface Props {
